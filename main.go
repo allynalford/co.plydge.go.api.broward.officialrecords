@@ -137,7 +137,7 @@ func Marshal(or interface{}) string {
 
 // GenerateErrorResponse function to create base error message with events.APIGatewayProxyResponse
 func GenerateErrorResponse(m string, c string, o string) (events.APIGatewayProxyResponse, error) {
-	ge, err := GenerateErrorString(m, c, o)
+	ge, err := model.GenerateErrorString(m, c, o)
 
 	if err != nil {
 		return events.APIGatewayProxyResponse{}, err
