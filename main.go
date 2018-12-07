@@ -15,7 +15,7 @@ import (
 )
 
 var (
-	_baseURL string = "https://officialrecords.broward.org/AcclaimWeb/search/SearchTypeParcel"
+	_baseURL = "https://officialrecords.broward.org/AcclaimWeb/search/SearchTypeParcel"
 )
 
 // Handler is executed by AWS Lambda in the main function. Once the request
