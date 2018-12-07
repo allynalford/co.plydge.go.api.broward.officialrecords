@@ -25,7 +25,7 @@ func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	parcelID, ok := request.QueryStringParameters["SN"]
 
 	if !ok {
-		return model.GenerateErrorResponse("Parameters: Missing Parcel ID", "1", parcelID)
+		return GenerateErrorResponse("Parameters: Missing Parcel ID", "1", parcelID)
 	}
 
 	var err error
